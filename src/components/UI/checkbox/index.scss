@@ -1,0 +1,44 @@
+.checkbox{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    input{
+        display: none;
+    }
+    span{
+        display: flex;
+        width: 28px;
+        height: 28px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+        border: 1px solid #DBE2EA;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+        border-radius: 4px;
+        background: #FFFFFF;
+        cursor: pointer;
+
+        &::before{
+            content: '';
+            display: none;
+            width: 15px;
+            height: 11px;
+            background: url('./check.svg') center center/cover no-repeat;
+        }
+
+        &.checked{
+            border: 2px solid #0880AE;
+            &::before{
+                display: block;
+            }
+        }
+    }
+
+    .use-politics{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #756F86;
+    }
+}
